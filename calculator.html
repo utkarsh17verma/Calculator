@@ -2,19 +2,24 @@
 <html>
 
 <head>
+<!--     javascript code -->
     <script>
+//         function to insert a sign or number 
         function insert(num){
             document.form.textview.value = document.form.textview.value + num
         }
+//         function to evaluate the answer
         function equal(){
             var exp = document.form.textview.value;
             if(exp){
                  document.form.textview.value = eval(exp);
             }
         }
+//         function to clear the screen
         function clean(){
             document.form.textview.value="";
         }
+//         function for backspace
         function back(){
             var exp = document.form.textview.value;
             document.form.textview.value=exp.substring(0,exp.length-1);
